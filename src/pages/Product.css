@@ -1,0 +1,48 @@
+.product-page {
+    padding: 60px 80px;
+}
+
+.product-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    /* top:0px; */
+    font-size: 10px;
+    bottom:900px;
+}
+
+.product-heading h1 {
+    font-size: 55px;
+    font-family: "Cormorant", serif;
+    margin-bottom: 10px;
+    position:relative;
+    bottom:20px;
+}
+
+/* .product-heading h2 {
+    font-size: 20px;
+    font-family: "Cormorant", serif;
+    color: #b08a5a;
+    font-weight: 500;
+    top:20px;
+} */
+.productpage.products{
+    position:relative;
+    top:100px;
+}
+.productpage .product-list {
+  gap: 10px;
+  position:relative;
+  top:150px;
+}
+
+.product-heading h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2;
+  color: #8a8a8a;
+  margin: 0;
+  white-space: normal;
+  position:relative;
+  bottom:20px;
+}

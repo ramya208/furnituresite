@@ -1,0 +1,191 @@
+/* Banner */
+
+.contact-banner img{
+  width: 85%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  position:relative;
+  left:95px;
+}
+
+/* Content */
+
+.contact-content {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact-content h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.contact-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+/* Contact Details */
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.contact-container {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* Left Side */
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h1 {
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.contact-left > p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+/* Office Details */
+
+.office-details {
+  display: flex;
+  gap: 80px;
+}
+
+.office h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.office p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Right Side */
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 17px;
+  font-family: inherit;
+}
+
+.contact-right textarea {
+  resize: none;
+}
+
+.contact-right button {
+  padding: 18px;
+  background: white;
+  border: 1px solid #b58b5a;
+  font-size: 15px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background: #b58b5a;
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .office-details {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-left h1 {
+    font-size: 42px;
+  }
+
+  .contact-banner img {
+    height: 280px;
+  }
+
+}
+.contact-box {
+  width: 250px;
+  text-align: center;
+}
+
+.contact-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .contact-banner img {
+    height: 300px;
+  }
+
+  .contact-content h1 {
+    font-size: 36px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,74 @@
+.features {
+    width: 100%;
+    padding: 70px 80px;
+}
+
+/* ---------- Feature Section ---------- */
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    bottom:40px;
+    /* margin-bottom: 80px; */
+    /* bottom:50px; */
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.Line,
+.Box,
+.Verify {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    position: relative;
+    left:30px;
+}
+
+.content h3 {
+    font-size: 24px;
+    font-family: "Cormorant", serif;
+    margin-bottom: 10px;
+    position: relative;
+    left:35px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 28px;
+    position: relative;
+    left:35px;
+}
+
+/* ---------- Gallery Section ---------- */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 350px 1fr 350px;
+    gap: 30px;
+    align-items: center;
+}
+
+.left img,
+.right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.center img {
+    width: 100%;
+    display: block;
+}
+.img{
+    width:100%;
+}

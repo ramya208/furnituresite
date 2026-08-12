@@ -1,0 +1,110 @@
+.checkout-page {
+  padding: 40px;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.checkout-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+}
+
+.customer-details,
+.order-summary {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.customer-details h2,
+.order-summary h2 {
+  margin-bottom: 20px;
+}
+
+.customer-details form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.customer-details input,
+.customer-details textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.customer-details label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.customer-details label input {
+  width: auto;
+}
+
+.customer-details button {
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.customer-details button:hover {
+  background: #333;
+}
+
+.checkout-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.checkout-item h3 {
+  margin: 0 0 8px;
+}
+
+.checkout-item p {
+  margin: 5px 0;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 20px;
+  }
+
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+}

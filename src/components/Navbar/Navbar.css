@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 60px;
+  background: hsl(0, 0%, 100%);
+  width:1100px;
+  position: relative;
+  left:140px;
+  height:100px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover {
+  color: #8B5E3C; /* Brown */
+}
+
+.logo {
+  color: white;
+  right:50px;
+  position: relative;
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  position: relative;
+  right:-190px;
+  font-size:14px;
+}
+
+.nav-links li {
+  /* color: rgb(14, 9, 9); */
+  cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo{
+    width: 120px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 20px;
+    left:20px;
+    position: relative;
+}
+
+.nav-icons i{
+    font-size: 24px;
+    cursor: pointer;
+}
+.cart-icon-btn {
+  position: relative;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon-btn i {
+  font-size: 22px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  min-width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  background: red;
+  color: white;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1;
+}
+.profile-icon-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon-btn i {
+  font-size: 22px;
+}
+.wishlist-icon {
+  position: relative;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.wishlist-count {
+  position: absolute;
+
+  top: -10px;
+  right: -10px;
+
+  min-width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: black;
+
+  color: white;
+
+  font-size: 11px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
