@@ -56,3 +56,113 @@
   cursor: pointer;
   font-weight: 600;
 }
+/* ============================= */
+/* TABLET VIEW - 1200px */
+/* ============================= */
+
+@media (max-width: 1200px) {
+
+    .auth-page {
+        min-height: 100vh;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .auth-box {
+        width: 380px;
+        max-width: 100%;
+        padding: 35px;
+        box-sizing: border-box;
+    }
+
+    .auth-box h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .auth-box form {
+        gap: 14px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE VIEW - 600px */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .auth-page {
+        width: 100%;
+        min-height: 100vh;
+
+        padding: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    .auth-box {
+        width: 100%;
+        max-width: 360px;
+
+        padding: 25px 20px;
+
+        border-radius: 8px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* HEADING */
+
+    .auth-box h1 {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+
+    /* FORM */
+
+    .auth-box form {
+        gap: 12px;
+    }
+
+
+    /* INPUT */
+
+    .auth-box input {
+        width: 100%;
+
+        padding: 11px;
+
+        font-size: 14px;
+    }
+
+
+    /* BUTTON */
+
+    .auth-box button {
+        width: 100%;
+
+        padding: 11px;
+
+        font-size: 14px;
+    }
+
+
+    /* TEXT */
+
+    .auth-box p {
+        font-size: 14px;
+        margin-top: 16px;
+        line-height: 1.5;
+    }
+
+
+    .auth-box p span {
+        font-weight: 600;
+    }
+
+}

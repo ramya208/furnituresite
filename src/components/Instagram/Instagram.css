@@ -60,3 +60,105 @@
     top:60px;
     right:100px;
 }
+/* ============================= */
+/* TABLET VIEW - 1200px */
+/* ============================= */
+
+@media (max-width: 1200px) {
+
+    .instagram {
+        width: 100%;
+        height: 260px;
+    }
+
+    .top-line,
+    .bottom-line {
+        width: 90%;
+    }
+
+    .instagram-title {
+        margin: 50px 0;
+    }
+
+    .design {
+        font-size: 75px;
+        left: 90px;
+        bottom: 20px;
+    }
+
+    .instagram-title h2 {
+        font-size: 34px;
+        letter-spacing: 2px;
+        top: 45px;
+        right: 60px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE VIEW - 600px */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .instagram {
+        width: 100%;
+        height: 220px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+
+    /* TOP & BOTTOM LINES */
+
+    .top-line,
+    .bottom-line {
+        width: 100%;
+        height: 4px;
+    }
+
+    .top-line {
+        bottom: 10px;
+    }
+
+    .bottom-line {
+        bottom: 10px;
+    }
+
+
+    /* TITLE */
+
+    .instagram-title {
+        width: 100%;
+        margin: 35px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Decorative Symbol */
+
+    .design {
+        font-size: 55px;
+        left: 0;
+        bottom: 10px;
+        margin-bottom: 0;
+    }
+
+
+    /* Instagram Heading */
+
+    .instagram-title h2 {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+
+        top: 20px;
+        right: 0;
+
+        margin: 0;
+    }
+
+}

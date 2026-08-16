@@ -243,7 +243,7 @@
 
 /* MOBILE */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
 
   .cart-drawer {
     width: 90%;
@@ -252,6 +252,165 @@
 
   .cart-drawer-open {
     right: 0;
+  }
+
+} */
+ @media (max-width: 1200px) {
+
+  .cart-drawer {
+    width: 380px;
+  }
+
+  .cart-drawer-header {
+    padding: 18px;
+  }
+
+  .cart-drawer-items {
+    padding: 18px;
+  }
+
+  .drawer-cart-item {
+    gap: 12px;
+  }
+
+  .drawer-cart-item img {
+    width: 80px;
+    height: 90px;
+  }
+
+  .drawer-item-details h3 {
+    font-size: 15px;
+  }
+
+  .drawer-item-details p {
+    font-size: 14px;
+  }
+
+  .cart-drawer-footer {
+    padding: 18px;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE VIEW - 600px */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  .cart-drawer {
+    width: 100%;
+    right: -100%;
+  }
+
+  .cart-drawer-open {
+    right: 0;
+  }
+
+  /* HEADER */
+
+  .cart-drawer-header {
+    padding: 15px;
+  }
+
+  .cart-drawer-header h2 {
+    font-size: 18px;
+  }
+
+  .cart-close {
+    font-size: 26px;
+  }
+
+
+  /* CART ITEMS */
+
+  .cart-drawer-items {
+    padding: 15px;
+  }
+
+  .drawer-cart-item {
+    gap: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .drawer-cart-item img {
+    width: 75px;
+    height: 85px;
+  }
+
+
+  /* PRODUCT DETAILS */
+
+  .drawer-item-details h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .drawer-item-details p {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+
+
+  /* QUANTITY */
+
+  .drawer-quantity {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .drawer-quantity button {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+
+  .drawer-quantity span {
+    min-width: 18px;
+    font-size: 14px;
+  }
+
+
+  /* REMOVE */
+
+  .drawer-remove {
+    margin-top: 7px;
+    font-size: 12px;
+  }
+
+
+  /* EMPTY CART */
+
+  .empty-drawer {
+    padding: 30px 10px;
+    font-size: 14px;
+  }
+
+
+  /* FOOTER */
+
+  .cart-drawer-footer {
+    padding: 15px;
+  }
+
+
+  /* SUBTOTAL */
+
+  .drawer-subtotal {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+
+  /* BUTTONS */
+
+  .view-cart-btn,
+  .checkout-btn {
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 13px;
   }
 
 }
