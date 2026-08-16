@@ -384,7 +384,7 @@ left:40px;
 /* ============================= */
 
 /* ============================= */
-/* MOBILE VIEW - 600px */
+/* MOBILE VIEW */
 /* ============================= */
 
 @media (max-width: 600px) {
@@ -395,12 +395,12 @@ left:40px;
 
     .about {
         width: 100%;
-        padding: 35px 15px;
+        padding: 40px 18px;
         box-sizing: border-box;
     }
 
     /* ========================= */
-    /* ABOUT TITLE */
+    /* TITLE */
     /* ========================= */
 
     .about-title {
@@ -417,14 +417,14 @@ left:40px;
 
     .about-title p {
         width: 100%;
-        margin: 0 auto;
         font-size: 15px;
         line-height: 25px;
         text-align: center;
+        margin: 0;
     }
 
     /* ========================= */
-    /* TOP SECTION */
+    /* TOP */
     /* ========================= */
 
     .top h1 {
@@ -448,51 +448,25 @@ left:40px;
     /* ========================= */
 
     .timeline {
-        display: grid;
-        grid-template-columns: 25px 1fr;
-        column-gap: 15px;
-        row-gap: 45px;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        gap: 45px;
         position: relative;
     }
 
-    /* Vertical line */
+    /* REMOVE VERTICAL LINE */
 
     .timeline::before {
-        content: "";
-        position: absolute;
-        left: 12px;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: #c8a26a;
-        transform: none;
+        display: none;
     }
 
     /* ========================= */
-    /* MIDDLE */
+    /* MIDDLE / CIRCLE */
     /* ========================= */
 
     .middle {
-        grid-column: 1;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        position: relative;
-        z-index: 2;
-    }
-
-    .circle {
-        width: 12px;
-        height: 12px;
-        min-width: 12px;
-        margin-top: 10px;
-        border: 2px solid #c8a26a;
-        border-radius: 50%;
-        background: white;
-        position: relative;
-        z-index: 5;
-        box-sizing: border-box;
+        display: none;
     }
 
     /* ========================= */
@@ -501,16 +475,15 @@ left:40px;
 
     .left,
     .right {
-        grid-column: 2;
         width: 100%;
-        min-width: 0;
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        text-align: center;
 
-        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     /* ========================= */
@@ -518,57 +491,59 @@ left:40px;
     /* ========================= */
 
     .left img,
-    .right img {
-        position: static;
-        width: 100%;
-        max-width: 300px;
-        height: 220px;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-    }
-
+    .right img,
     .boxone img,
     .boxtwo img {
+
         position: static;
+
         width: 100%;
         max-width: 300px;
         height: 220px;
+
         object-fit: cover;
+        display: block;
+
         margin: 0 auto;
     }
 
     /* ========================= */
-    /* BOX TEXT */
+    /* HEADINGS */
     /* ========================= */
-
-    .box-text,
-    .boxtext {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-    }
 
     .box-text h2,
     .boxtext h2 {
+
         position: static;
+
+        width: 100%;
+
         font-size: 28px;
         line-height: 1.3;
+
         text-align: center;
-        margin: 18px 0 10px;
+
+        margin: 20px 0 12px;
     }
+
+    /* ========================= */
+    /* CONTENT */
+    /* ========================= */
 
     .box-text p,
     .boxtext p {
+
         position: static;
+
         width: 100%;
         max-width: 320px;
 
         font-size: 15px;
         line-height: 1.7;
 
-        margin: 0 auto;
         text-align: center;
+
+        margin: 0 auto;
     }
 
     /* ========================= */
@@ -577,30 +552,36 @@ left:40px;
 
     .text {
         width: 100%;
-        padding: 10px 5px;
-        box-sizing: border-box;
+        padding: 0;
+        text-align: center;
     }
 
     .left.text,
     .right.text {
-        text-align: left;
+        text-align: center;
     }
 
     .text h2 {
         font-size: 28px;
         line-height: 1.3;
         letter-spacing: 1.5px;
+
         margin: 0 0 12px;
+
+        text-align: center;
     }
 
     .text p {
         font-size: 15px;
         line-height: 26px;
-        margin: 0;
+
+        margin: 0 auto;
+
+        text-align: center;
     }
 
     /* ========================= */
-    /* LINE DECORATION */
+    /* LINE */
     /* ========================= */
 
     .line span {
