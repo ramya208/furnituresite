@@ -383,50 +383,65 @@ left:40px;
 /* MOBILE VIEW - 600px */
 /* ============================= */
 
+/* ============================= */
+/* MOBILE VIEW - 600px */
+/* ============================= */
+
 @media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .about {
         width: 100%;
-        padding: 40px 20px;
+        padding: 35px 15px;
         box-sizing: border-box;
     }
-
 
     /* ========================= */
     /* ABOUT TITLE */
     /* ========================= */
 
     .about-title {
-        margin-bottom: 40px;
+        width: 100%;
+        margin-bottom: 45px;
     }
 
     .about-title h1 {
         font-size: 34px;
         letter-spacing: 2px;
-        margin-bottom: 15px;
+        margin: 0 0 15px;
+        text-align: center;
     }
 
     .about-title p {
         width: 100%;
+        margin: 0 auto;
         font-size: 15px;
         line-height: 25px;
+        text-align: center;
     }
 
+    /* ========================= */
+    /* TOP SECTION */
+    /* ========================= */
+
     .top h1 {
-        left: 0;
-        bottom: 0;
-        font-size: 32px;
+        position: static;
+        font-size: 30px;
         text-align: center;
+        margin: 0 0 15px;
     }
 
     .top p {
-        left: 0;
-        top: 0;
+        position: static;
+        width: 100%;
         font-size: 15px;
-        line-height: 1.6;
+        line-height: 1.7;
         text-align: center;
+        margin: 0;
     }
-
 
     /* ========================= */
     /* TIMELINE */
@@ -434,24 +449,25 @@ left:40px;
 
     .timeline {
         display: grid;
-
-        grid-template-columns: 30px 1fr;
-
-        row-gap: 40px;
-
+        grid-template-columns: 25px 1fr;
+        column-gap: 15px;
+        row-gap: 45px;
+        width: 100%;
         position: relative;
     }
 
-
-    /* Vertical Line */
+    /* Vertical line */
 
     .timeline::before {
-        left: 15px;
-        width: 2px;
+        content: "";
+        position: absolute;
+        left: 12px;
         top: 0;
         bottom: 0;
+        width: 2px;
+        background: #c8a26a;
+        transform: none;
     }
-
 
     /* ========================= */
     /* MIDDLE */
@@ -459,18 +475,25 @@ left:40px;
 
     .middle {
         grid-column: 1;
-        grid-row: auto;
-
+        display: flex;
         justify-content: center;
         align-items: flex-start;
+        position: relative;
+        z-index: 2;
     }
 
     .circle {
-        width: 14px;
-        height: 14px;
-        margin-top: 15px;
+        width: 12px;
+        height: 12px;
+        min-width: 12px;
+        margin-top: 10px;
+        border: 2px solid #c8a26a;
+        border-radius: 50%;
+        background: white;
+        position: relative;
+        z-index: 5;
+        box-sizing: border-box;
     }
-
 
     /* ========================= */
     /* LEFT & RIGHT */
@@ -479,14 +502,16 @@ left:40px;
     .left,
     .right {
         grid-column: 2;
-
         width: 100%;
+        min-width: 0;
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
 
+        box-sizing: border-box;
+    }
 
     /* ========================= */
     /* IMAGES */
@@ -494,100 +519,66 @@ left:40px;
 
     .left img,
     .right img {
+        position: static;
         width: 100%;
-        max-width: 280px;
-        height: auto;
+        max-width: 300px;
+        height: 220px;
         object-fit: cover;
+        display: block;
+        margin: 0 auto;
     }
 
-    .boxone img {
-        width: 100%;
-        max-width: 280px;
-        height: 220px;
-
-        left: 0;
-        top: 0;
-    }
-
+    .boxone img,
     .boxtwo img {
+        position: static;
         width: 100%;
-        max-width: 280px;
+        max-width: 300px;
         height: 220px;
-
-        left: 0;
-        top: 0;
+        object-fit: cover;
+        margin: 0 auto;
     }
-
 
     /* ========================= */
     /* BOX TEXT */
     /* ========================= */
 
-    .box-text h2 {
-        position: relative;
-
-        left: 0;
-        top: 0;
-
-        font-size: 28px;
-
-        text-align: center;
-
-        margin-top: 15px;
-    }
-
-    .box-text p {
-        position: relative;
-
-        left: 0;
-        top: 0;
-
+    .box-text,
+    .boxtext {
         width: 100%;
-
-        font-size: 15px;
-        line-height: 1.7;
-
-        margin: 10px 0 0;
-
         text-align: center;
+        box-sizing: border-box;
     }
 
+    .box-text h2,
     .boxtext h2 {
-        position: relative;
-
-        left: 0;
-        top: 0;
-
+        position: static;
         font-size: 28px;
-
+        line-height: 1.3;
         text-align: center;
-
-        margin-top: 15px;
+        margin: 18px 0 10px;
     }
 
+    .box-text p,
     .boxtext p {
-        position: relative;
-
-        left: 0;
-        top: 0;
-
+        position: static;
         width: 100%;
+        max-width: 320px;
 
         font-size: 15px;
         line-height: 1.7;
 
-        margin: 10px 0 0;
-
+        margin: 0 auto;
         text-align: center;
     }
-
 
     /* ========================= */
     /* NORMAL TEXT */
     /* ========================= */
 
     .text {
-        padding: 10px 15px;
+        width: 100%;
+        padding: 10px 5px;
+        box-sizing: border-box;
     }
 
     .left.text,
@@ -597,20 +588,22 @@ left:40px;
 
     .text h2 {
         font-size: 28px;
+        line-height: 1.3;
         letter-spacing: 1.5px;
-        margin-bottom: 12px;
+        margin: 0 0 12px;
     }
 
     .text p {
         font-size: 15px;
         line-height: 26px;
+        margin: 0;
     }
 
-
+    /* ========================= */
     /* LINE DECORATION */
+    /* ========================= */
 
     .line span {
-        top: 40px;
+        position: static;
     }
-
 }

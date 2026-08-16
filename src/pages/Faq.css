@@ -80,3 +80,198 @@
     font-weight: 500;
     flex-shrink: 0;
 }
+/* ============================= */
+/* TABLET VIEW - 1200px */
+/* ============================= */
+
+@media (max-width: 1200px) {
+
+    .faq {
+        width: 100%;
+        padding: 35px 0;
+    }
+
+
+    /* FAQ BANNER */
+
+    .faq-banner {
+        width: 90%;
+        margin: 0 auto 40px;
+    }
+
+    .faq-banner img {
+        width: 100%;
+        height: 280px;
+
+        left: 0;
+        bottom: 0;
+
+        object-fit: cover;
+    }
+
+
+    /* FAQ CONTENT */
+
+    .faq-content {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .faq-content h1 {
+        font-size: 45px;
+        margin-bottom: 45px;
+        top: 0;
+    }
+
+
+    /* FAQ GRID */
+
+    .faq-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+
+    /* FAQ ITEM */
+
+    .faq-item {
+        padding: 20px 0;
+    }
+
+    .faq-item h3 {
+        font-size: 23px;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .faq-item p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* ICON */
+
+    .icon {
+        width: 28px;
+        height: 28px;
+
+        font-size: 19px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE VIEW - 600px */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .faq {
+        width: 100%;
+        padding: 25px 15px;
+        box-sizing: border-box;
+    }
+
+
+    /* FAQ BANNER */
+
+    .faq-banner {
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    .faq-banner img {
+        width: 100%;
+        height: 180px;
+
+        left: 0;
+        bottom: 0;
+
+        object-fit: cover;
+    }
+
+
+    /* FAQ CONTENT */
+
+    .faq-content {
+        width: 100%;
+        margin: 35px auto;
+    }
+
+
+    .faq-content h1 {
+        font-size: 32px;
+
+        margin-bottom: 30px;
+
+        top: 0;
+
+        line-height: 1.2;
+    }
+
+
+    /* FAQ CONTAINER */
+
+    .faq-container {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    /* FAQ COLUMN */
+
+    .faq-column {
+        width: 100%;
+    }
+
+
+    /* FAQ ITEM */
+
+    .faq-item {
+        padding: 18px 0;
+    }
+
+
+    .faq-item h3 {
+        display: flex;
+
+        align-items: center;
+
+        gap: 10px;
+
+        font-size: 19px;
+
+        line-height: 1.4;
+
+        margin-bottom: 12px;
+    }
+
+
+    .faq-item p {
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        color: #666;
+
+        margin-left: 42px;
+    }
+
+
+    /* ICON */
+
+    .icon {
+        width: 27px;
+        height: 27px;
+
+        min-width: 27px;
+
+        font-size: 18px;
+    }
+
+}
