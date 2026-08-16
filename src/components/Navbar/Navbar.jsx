@@ -129,6 +129,176 @@
 // }
 
 // export default Navbar;
+// import "./Navbar.css";
+
+// import logo from "../../assets/logo.png";
+
+// import { useState } from "react";
+
+// import { useSelector } from "react-redux";
+
+// import { Link, useNavigate } from "react-router-dom";
+
+// import CartDrawer from "../CartDrawer/CartDrawer";
+
+
+// function Navbar() {
+
+//   const [cartOpen, setCartOpen] = useState(false);
+
+//   const navigate = useNavigate();
+
+
+//   // Cart items
+
+//   const cartItems = useSelector(
+//     (state) => state.cart?.items || []
+//   );
+
+
+//   // Wishlist count
+
+//   const wishlistCount = useSelector(
+//     (state) => state.wishlist?.items?.length || 0
+//   );
+
+
+//   return (
+//     <>
+//       <nav className="navbar">
+
+
+//         {/* LOGO */}
+
+//         <div className="logo">
+
+//           <Link to="/home">
+
+//             <img
+//               src={logo}
+//               alt="Design"
+//               className="logo"
+//             />
+
+//           </Link>
+
+//         </div>
+
+
+//         {/* MENU */}
+
+//         <ul className="nav-links">
+
+//           <li>
+//             <Link to="/home">
+//               HOME
+//             </Link>
+//           </li>
+
+//           <li>
+//             <Link to="/about">
+//               ABOUT
+//             </Link>
+//           </li>
+
+//           <li>
+//             <Link to="/faq">
+//               FAQ
+//             </Link>
+//           </li>
+
+//           <li>
+//             <Link to="/products">
+//               PRODUCTS
+//             </Link>
+//           </li>
+
+//           <li>
+//             <Link to="/contact">
+//               CONTACT
+//             </Link>
+//           </li>
+
+//         </ul>
+
+
+//         {/* ICONS */}
+
+//         <div className="nav-icons">
+
+
+//           {/* CART */}
+
+//           <button
+//             type="button"
+//             className="cart-icon-btn"
+//             onClick={() => setCartOpen(true)}
+//           >
+
+//             <i className="ri-shopping-cart-line"></i>
+
+
+//             <span className="cart-count">
+//               {cartItems.length}
+//             </span>
+
+//           </button>
+
+
+
+//           {/* PROFILE */}
+
+//           <button
+//             type="button"
+//             className="profile-icon-btn"
+//             onClick={() => navigate("/signup")}
+//           >
+
+//             <i className="ri-user-line"></i>
+
+//           </button>
+
+
+
+//           {/* WISHLIST */}
+
+//           <Link
+//             to="/wishlist"
+//             className="wishlist-icon"
+//           >
+
+//             <i className="ri-heart-line"></i>
+
+
+//             {wishlistCount > 0 && (
+//               <span className="wishlist-count">
+//                 {wishlistCount}
+//               </span>
+//             )}
+
+//           </Link>
+
+
+//         </div>
+
+//       </nav>
+
+
+//       {/* CART DRAWER */}
+
+//       <CartDrawer
+//         isOpen={cartOpen}
+//         onClose={() => setCartOpen(false)}
+//       />
+
+//     </>
+//   );
+// }
+
+
+// export default Navbar;
+/* Navbar.jsx */
+
 import "./Navbar.css";
 
 import logo from "../../assets/logo.png";
@@ -145,6 +315,8 @@ import CartDrawer from "../CartDrawer/CartDrawer";
 function Navbar() {
 
   const [cartOpen, setCartOpen] = useState(false);
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navigate = useNavigate();
 
@@ -163,6 +335,13 @@ function Navbar() {
   );
 
 
+  // Close mobile menu
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+
   return (
     <>
       <nav className="navbar">
@@ -172,7 +351,7 @@ function Navbar() {
 
         <div className="logo">
 
-          <Link to="/home">
+          <Link to="/home" onClick={closeMenu}>
 
             <img
               src={logo}
@@ -185,7 +364,7 @@ function Navbar() {
         </div>
 
 
-        {/* MENU */}
+        {/* DESKTOP MENU */}
 
         <ul className="nav-links">
 
@@ -237,13 +416,11 @@ function Navbar() {
 
             <i className="ri-shopping-cart-line"></i>
 
-
             <span className="cart-count">
               {cartItems.length}
             </span>
 
           </button>
-
 
 
           {/* PROFILE */}
@@ -259,7 +436,6 @@ function Navbar() {
           </button>
 
 
-
           {/* WISHLIST */}
 
           <Link
@@ -268,7 +444,6 @@ function Navbar() {
           >
 
             <i className="ri-heart-line"></i>
-
 
             {wishlistCount > 0 && (
               <span className="wishlist-count">
@@ -279,7 +454,72 @@ function Navbar() {
           </Link>
 
 
+          {/* MOBILE MENU BUTTON */}
+
+          <button
+            type="button"
+            className="menu-toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+
+            <i
+              className={
+                menuOpen
+                  ? "ri-close-line"
+                  : "ri-menu-line"
+              }
+            ></i>
+
+          </button>
+
+
         </div>
+
+
+        {/* MOBILE MENU */}
+
+        {menuOpen && (
+
+          <div className="mobile-menu">
+
+            <Link
+              to="/home"
+              onClick={closeMenu}
+            >
+              HOME
+            </Link>
+
+            <Link
+              to="/about"
+              onClick={closeMenu}
+            >
+              ABOUT
+            </Link>
+
+            <Link
+              to="/faq"
+              onClick={closeMenu}
+            >
+              FAQ
+            </Link>
+
+            <Link
+              to="/products"
+              onClick={closeMenu}
+            >
+              PRODUCTS
+            </Link>
+
+            <Link
+              to="/contact"
+              onClick={closeMenu}
+            >
+              CONTACT
+            </Link>
+
+          </div>
+
+        )}
 
       </nav>
 

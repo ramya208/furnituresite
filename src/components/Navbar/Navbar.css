@@ -282,5 +282,137 @@ nav ul li a:hover {
 
     font-size: 10px;
   }
+  
+
+  .navbar {
+    width: 100%;
+    height: 75px;
+
+    left: 0;
+
+    padding: 15px 20px;
+
+    position: relative;
+
+    box-sizing: border-box;
+  }
+
+
+  /* LOGO */
+
+  .logo {
+    width: 85px;
+    right: 0;
+  }
+
+
+  /* HIDE DESKTOP MENU */
+
+  .nav-links {
+    display: none;
+  }
+
+
+  /* ICONS */
+
+  .nav-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    left: 0;
+  }
+
+
+  /* MENU BUTTON */
+
+  .menu-toggle {
+    display: flex;
+  }
+
+
+  /* MOBILE MENU */
+
+  .mobile-menu {
+    display: flex;
+
+    position: absolute;
+
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    flex-direction: column;
+
+    z-index: 9999;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  }
+
+
+  .mobile-menu a {
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    padding: 16px 20px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+
+  .mobile-menu a:hover {
+    color: #8B5E3C;
+
+    background: #f8f8f8;
+  }
+
+
+  /* ICON SIZE */
+
+  .cart-icon-btn i,
+  .profile-icon-btn i,
+  .wishlist-icon i {
+    font-size: 20px;
+  }
+
+
+  /* CART COUNT */
+
+  .cart-count {
+    top: -8px;
+    right: -8px;
+
+    min-width: 16px;
+    height: 16px;
+
+    font-size: 10px;
+  }
+
+
+  /* WISHLIST COUNT */
+
+  .wishlist-count {
+    top: -8px;
+    right: -8px;
+
+    min-width: 16px;
+    height: 16px;
+
+    font-size: 10px;
+  }
+
+
 
 }
